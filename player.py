@@ -13,11 +13,14 @@ class Player(turtle.Turtle):
         self.penup()
         self.goto(STARTING_POSITION)
 
+
+
+
     def move_up(self):
         self.forward(MOVE_DISTANCE)
 
     def is_reached_top(self):
-        if self.distance(0, FINISH_LINE_Y) < 10:
+        if self.distance(0, FINISH_LINE_Y) < 20:
             self.reset_position()
             return True
 
